@@ -49,42 +49,40 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="@+id/textView2"
         app:layout_constraintEnd_toEndOf="@+id/etGrupo"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/etGrupo"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/etGrupo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ListView
         android:id="@+id/listViewDiscos"
-        android:layout_width="377dp"
-        android:layout_height="429dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.529"
+        android:layout_width="409dp"
+        android:layout_height="566dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etDisco"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonOk" />
 
     <Button
         android:id="@+id/buttonOk"
-        android:layout_width="69dp"
-        android:layout_height="50dp"
+        android:layout_width="143dp"
+        android:layout_height="43dp"
         android:layout_marginTop="12dp"
-        android:text="Ok"
+        android:text="Introducir"
         app:layout_constraintBottom_toTopOf="@+id/listViewDiscos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintHorizontal_bias="0.115"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.122" />
 
     <Button
         android:id="@+id/buttonDel"
-        android:layout_width="67dp"
-        android:layout_height="46dp"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
         android:text="Borrar"
         app:layout_constraintBottom_toBottomOf="@+id/buttonOk"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintHorizontal_bias="0.71"
         app:layout_constraintStart_toEndOf="@+id/buttonOk"
-        app:layout_constraintTop_toBottomOf="@+id/etDisco"
+        app:layout_constraintTop_toTopOf="@+id/buttonOk"
         app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
